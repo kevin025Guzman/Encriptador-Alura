@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Encriptador</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+        <div class="leftBox">
+            <div class="logoBox">
+                <h2 class="logo">a</h2>
+            </div>
+            <div class="insideLeft">
+                <div class="form">
+                    <textarea name="scanner" id="scanner" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="buttons">
+                        <button class="BtnEncriptar">Encriptar</button>
+                        <button nclass="BtnDesencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightBox">
+            <div class="responseBox">
+                <div class="init">
+                <img class="img" src="img/detective.png" alt="Detective.png">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p>Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+
+            </div>
+        </div>
+
+    </div>  
+
+
+
+
+    <script src="js/scrypt.js" />
+  </body>
+  
 </html>
