@@ -4,6 +4,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: rgb(206, 226, 207, .4);
 }
 
 .container{
@@ -12,18 +13,37 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
+.logoBox{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+
+
 .logo{
-    font-size: 5em;
+    width: 100px;
+    height: 100px;
+    font-size: 6rem;
     margin: 0;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(31, 44, 31);
+    border: 1px solid rgb(31, 44, 31);
 }
 
 .leftBox{
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .form{
     height: 55vh;
@@ -32,18 +52,103 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.textarea{
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 0.5rem 1rem;
+    resize: none;
+    
+    background-color: rgb(206, 226, 207, .1);
+    border-radius: 10px;
+}
+.textarea:focus{
+    outline:  1px ridge rgba(90, 159, 93);
+    
+}
+.textarea::placeholder{
+    color: rgb(31, 44, 31);
+}
+
 .buttons{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2rem;
 }
 button{
     padding: 1rem 2rem;
     border-radius: 10px;
-  
     border: none;
+    font-size: 1.1rem;
+}
+
+.BtnEncriptar{
+    background-color: rgb(31, 44, 31);
+    color: #fff;
+}
+.BtnDesencriptar{
+    background-color: #fff;
+    color:rgb(31, 44, 31) ;
+}
+
+/*  Right side */
+
+.rightBox{
+    max-width: 350px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fff;
+    padding:1rem ;
+    
+}
+
+.init{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img{
     width: 150px;
     height: 150px;
 }
+
+p, h3{
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .logoBox {
+        height: 5vh;
+    }
+    .textarea, .form{
+        width: 90%;
+    }
+   .buttons{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        width: 95%;
+      
+   }
+   .BtnDesencriptar{
+    margin-top: 1.5rem;
+   }
+   .insideLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+  }
